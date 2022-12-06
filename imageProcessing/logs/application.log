@@ -1,0 +1,31 @@
+2022-12-06T21:41:57.938+01:00  INFO 32312 --- [main] c.i.p.ImageProcessingApplication         : Starting ImageProcessingApplication using Java 17.0.5 with PID 32312 (D:\Upstream\automation workspace\imageProcessing\target\classes started by Shubhangi in D:\Upstream\automation workspace\imageProcessing)
+2022-12-06T21:41:57.941+01:00  INFO 32312 --- [main] c.i.p.ImageProcessingApplication         : No active profile set, falling back to 1 default profile: "development"
+2022-12-06T21:41:58.878+01:00  INFO 32312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-06T21:41:58.889+01:00  INFO 32312 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-06T21:41:58.889+01:00  INFO 32312 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-12-06T21:41:58.972+01:00  INFO 32312 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-06T21:41:58.976+01:00  INFO 32312 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2022-12-06T21:41:59.344+01:00  INFO 32312 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-06T21:41:59.352+01:00  INFO 32312 --- [main] c.i.p.ImageProcessingApplication         : Started ImageProcessingApplication in 1.794 seconds (process running for 2.368)
+2022-12-06T21:42:03.065+01:00  INFO 32312 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-06T21:42:03.066+01:00  INFO 32312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-06T21:42:03.067+01:00  INFO 32312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-06T21:42:03.090+01:00  WARN 32312 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2022-12-06T21:42:09.458+01:00  WARN 32312 --- [http-nio-8080-exec-4] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.image.processing.controller.ImpageProcessingController
+2022-12-06T21:42:09.465+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Started image processor.
+2022-12-06T21:42:09.466+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : input file path : C:\Users\Shubhangi\Downloads\test_data.tiff
+2022-12-06T21:42:09.466+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Started image processing : processImageUsingThread()
+2022-12-06T21:42:09.566+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Number of images to process : 182
+2022-12-06T21:42:09.654+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : first image height : 2160
+2022-12-06T21:42:09.655+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : first image width : 2560
+2022-12-06T21:42:13.449+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : First image list created..
+2022-12-06T21:42:16.685+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Second image list created..
+2022-12-06T21:42:16.688+01:00  INFO 32312 --- [pool-1-thread-1] c.i.p.s.impl.ImageProcessingServiceImpl  : Started calculator to calculate RGB sum
+2022-12-06T21:42:16.688+01:00  INFO 32312 --- [pool-1-thread-2] c.i.p.s.impl.ImageProcessingServiceImpl  : Started calculator to calculate RGB sum
+2022-12-06T21:42:37.391+01:00  INFO 32312 --- [pool-1-thread-2] c.i.p.s.impl.ImageProcessingServiceImpl  : Calculate the average RGB value
+2022-12-06T21:42:37.391+01:00  INFO 32312 --- [pool-1-thread-2] c.i.p.s.impl.ImageProcessingServiceImpl  : Ended image Caculator
+2022-12-06T21:42:37.637+01:00  INFO 32312 --- [pool-1-thread-1] c.i.p.s.impl.ImageProcessingServiceImpl  : Calculate the average RGB value
+2022-12-06T21:42:37.638+01:00  INFO 32312 --- [pool-1-thread-1] c.i.p.s.impl.ImageProcessingServiceImpl  : Ended image Caculator
+2022-12-06T21:42:37.645+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Result counter 1
+2022-12-06T21:42:37.678+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Result counter 2
+2022-12-06T21:42:38.397+01:00  INFO 32312 --- [http-nio-8080-exec-4] c.i.p.s.impl.ImageProcessingServiceImpl  : Average file created : C:\Users\Shubhangi\Downloads\genrated-file-after-average.tiff
